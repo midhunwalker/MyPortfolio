@@ -10,7 +10,7 @@ const NebulaBackground = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const numStars = 300;
+    const numStars = 1000;
     let stars = [];
 
     const resize = () => {
@@ -126,7 +126,7 @@ const NebulaBackground = () => {
   }, []);
 
   return (
-    <div className="nebula-container">
+    <div className="w-full h-full nebula-container bg-black">
       <div className="nebula"></div>
       <canvas ref={canvasRef} id="stars"></canvas>
     </div>

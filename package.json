@@ -12,14 +12,16 @@
   "dependencies": {
     "@devil7softwares/react-drifter-stars": "^1.0.6",
     "@flodlc/nebula": "^1.0.56",
-    "@react-three/drei": "^10.7.6",
-    "@react-three/fiber": "^9.3.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@heroicons/react": "^2.2.0",
+    "@react-three/drei": "^9.97.0",
+    "@react-three/fiber": "^8.15.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "three": "^0.180.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
+    "@tailwindcss/vite": "^4.1.13",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
