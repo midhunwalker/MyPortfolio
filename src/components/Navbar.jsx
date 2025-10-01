@@ -24,9 +24,9 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-6">
+    <nav className=" fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-6xl px-6">
       {/* Enhanced Navbar Container with Gradient Background */}
-      <div className="flex items-center justify-between bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 backdrop-blur-xl rounded-b-full shadow-2xl px-6 py-3 border border-white/20 transition-all duration-500 hover:shadow-[0_0_30px_#3B82F6] hover:from-blue-500/30 hover:via-purple-500/30 hover:to-pink-500/30">
+      <div className=" flex items-center justify-between bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 backdrop-blur-xl rounded-b-full shadow-2xl px-6 py-3 border border-white/20 transition-all duration-500 hover:shadow-[0_0_30px_#3B82F6] hover:from-blue-500/30 hover:via-purple-500/30 hover:to-pink-500/30">
       
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-center flex-1 gap-4">
@@ -46,6 +46,7 @@ export default function Navbar() {
               {item.name}
             </button>
           ))}
+        </div>
         </div>
 
         {/* Mobile Hamburger */}
@@ -87,7 +88,7 @@ export default function Navbar() {
             )}
           </button>
         </div>
-      </div>
+      
 
       {/* Mobile Menu with Enhanced Styling */}
       <div

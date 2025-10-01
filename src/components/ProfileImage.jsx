@@ -5,12 +5,13 @@ export default function ProfileImage({
   width ,
   height ,
   borderSize = "border-[12px]",
-  name = "Your Name",
+  name = "",
+  prof="",
 }) {
   return (
-    <div className="flex items-center justify-center w-full px-6">
+    <div className="flex items-center justify-center  w-full">
       {/* Enhanced container with gradient background and animations */}
-      <div className="flex flex-col items-center gap-6 
+      <div className="flex flex-col items-center gap-4 text-justify
                       bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 
                       rounded-4xl shadow-2xl px-8 py-8 border border-white/20 
                       backdrop-blur-lg transition-all duration-500 
@@ -47,12 +48,19 @@ export default function ProfileImage({
         </div>
 
         {/* Enhanced Name Label */}
-        <span className="font-poppins text-lg font-bold tracking-wider 
+        <span className="font-poppins  text-lg font-bold tracking-wider 
                          text-transparent bg-clip-text 
                          bg-gradient-to-r from-blue-400 to-purple-500 
                          transition-all duration-500 
                          hover:from-blue-500 hover:to-purple-600">
           {name}
+        </span>
+        <span className="font-poppins text-center text-xs font-bold tracking-wider 
+                         text-transparent bg-clip-text 
+                         bg-gradient-to-r from-blue-500 to-purple-500 
+                         transition-all duration-500 
+                         hover:from-blue-500 hover:to-purple-600">
+          {prof}
         </span>
       </div>
     </div>
